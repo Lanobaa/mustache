@@ -1,8 +1,8 @@
-import Scanner from './Scanner'
+import parseTemplateToTokens from "./parseTemplateToTokens.js"
 
 window.TemplateEngine = {
   render(templateStr, data) {
-    console.log('data..', data)
-    const scanner = new Scanner(templateStr)
+    const tokens = parseTemplateToTokens(templateStr)
+    console.log('tokens..', tokens);
   }
 }
