@@ -25,5 +25,5 @@ methodNames.forEach((name) => {
 
 
 })
-console.log('arr.methods..', arrMethods);
+console.log('arr.methods....', arrMethods);
 
