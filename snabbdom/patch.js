@@ -5,6 +5,7 @@ export default function patch (oldVNode, newVNode) {
   // 判断oldVNode是否是一个虚拟节点
   if (oldVNode.sel === '' || oldVNode.sel === undefined) {
     // 传入的oldVNode是dom节点，需要转换成虚拟节点
+    console.log('-------------是真实的dom节点-------------');
     oldVNode = vnode(
       oldVNode.tagName.toLowerCase(),
       {},

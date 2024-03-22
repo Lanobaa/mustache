@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+  </div>
+
+  <script>
+    const app = document.getElementById('app');
+    console.log('app.child...', app);
+    for (let i = 0; i < app.children.length; i++) {
+      console.log('app...', app.children[i].innerText);
+      app.removeChild(app.children[i]);
+    }
+  </script>
+</body>
+</html>
